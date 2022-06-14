@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Familia/styles.css' %}">
+    <title>Lista de Familiares</title>
+</head>
+<body>
+    <h1>Familia - lista</h1>
+    <h3>Integrantes</h3>
+    <table>
+        <thead>
+            <td>Nombre</td>
+            <td>Edad</td>
+            <td>Fecha</td>
+        </thead>
+        {% for persona in personas %}
+        <tr> 
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.edad}}</td>
+            <td>{{persona.fecha}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    
+</body>
+</html>

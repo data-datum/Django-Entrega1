@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+
+body{
+    font-family: 'Joan', serif;
+}
+
+td{
+    border: 2px solid salmon;
+}
